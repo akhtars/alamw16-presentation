@@ -1,0 +1,66 @@
+/**
+ * Dartmouth College Library theme, designed by Shaun Akhtar
+ *
+ * Copyright (C) 2015 Trustees of Dartmouth College
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #e9eee0;
+
+$mainColor: #5b6d77;
+$headingColor: #5b6d77;
+
+$mainFontSize: 38px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Alegreya Sans SC', 'Source Sans Pro', sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #809b55;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal code {
+   font-family: 'Inconsolata', monospace;
+}
+
+.reveal .slides section .fragment.highlight-green.visible {
+   color: #809b55;
+}
+
+.reveal a {
+   text-decoration: underline;
+   text-decoration-style: dotted;
+}
+
+.reveal .slide-number-a {
+   font-family: 'Alegreya Sans SC', 'Source Sans Pro', sans-serif;
+}
