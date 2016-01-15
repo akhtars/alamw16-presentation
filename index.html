@@ -94,9 +94,9 @@
             
             Metadata created in or transformed into MODS for local digital assets (unique digitized and born-digital material)
             
-            Includes new projects and retrospective conversion of metadata for previous projects
+            Includes new projects and retrospective conversion of metadata from previous projects
             
-            Many digital items, a lot of data, limited item-level representation in WorldCat, few OCLC record numbers
+            Many digital items and a lot of records, but limited item-level representation in WorldCat and few OCLC record numbers
             
             Note:
             This is where we are today. MODS is our schema of choice for descriptive metadata about our digital collections and items.
@@ -158,6 +158,8 @@
             
             Note:
             Some basic information about the WorldCat Metadata API itself.
+            
+            Unfortunately, the API does not have a true sandbox mode. All edits, even if they apply to test records, take place within the production instance of WorldCat.
           </script>
 				</section>
 
@@ -204,6 +206,8 @@
             
             Note:
             This is an overview of how we'd like to incorporate the Metadata API into our processes for digital collections.
+            
+            The blue boxes represent metadata packets and formats, while the green boxes represent systems in which metadata is stored or to which it is distributed.
             
             In an ideal environment, we would create or edit our MODS records, and simply transform them to formats needed for various internal and external systems.
             
@@ -254,7 +258,7 @@
             Have data ready for the next step in our workflow
             
             Note:
-            At the process level, there were a few tasks we wanted to design this tool to accomplish.
+            Translating our workflow goals into code development, there were a few tasks we wanted to design this tool to accomplish.
           </script>
 				</section>
 
